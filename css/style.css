@@ -1,0 +1,47 @@
+.hidden{
+    display: none;
+}
+
+.active{
+    background-color: aqua;
+}
+
+h1::first-letter {
+    text-transform:capitalize;
+}
+
+.login{
+    width: 40%;
+    height: 22vw;
+
+    border-radius: 5%;
+    background-color: white;
+
+
+    position: relative;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, 50%);
+    z-index: 20;
+    position: relative;
+}
+
+.register{
+    width: 40%;
+    height: 22vw;
+
+    border-radius: 5%;
+    background-color: white;
+
+
+    position: relative;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, 50%);
+    z-index: 20;
+    position: relative;
+}
