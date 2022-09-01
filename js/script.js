@@ -4,15 +4,6 @@ const regform = document.querySelector(".register");
 const loginform = document.querySelector(".login");
 const loginBtn = document.querySelector(".login-btn");
 
-regBtn.addEventListener("click", (e) => {
-  
-  regBtn.classList.add("active");
-  loginBtn.classList.remove("active");
-
-  regform.classList.remove("hidden");
-  loginform.classList.add("hidden");
-});
-
 const regSubmit = document.querySelector(".reg-sub-btn");
 const loginSubmit = document.querySelector(".login-sub-btn");
 
@@ -22,6 +13,22 @@ const regEmail = document.querySelector(".reg-email");
 
 const loginUserName = document.querySelector(".login-username");
 const loginPassword = document.querySelector(".login-password");
+
+const logoutBtn = document.querySelector(".logout-btn")
+
+regBtn.addEventListener("click", (e) => {
+  
+  regBtn.classList.add("active");
+  loginBtn.classList.remove("active");
+
+  regform.classList.remove("hidden");
+  loginform.classList.add("hidden");
+});
+
+logoutBtn.addEventListener("click",()=>{
+  userpage.classList.add("hidden")
+  headbtns.classList.remove("hidden");
+})
 
 
 
